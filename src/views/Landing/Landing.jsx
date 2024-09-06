@@ -1,6 +1,17 @@
 import React from "react";
+import Spinner from "../../components/Spinner";
+import BenefitsCard from "../../components/BenifitsCart";
+import { FaCode, FaComputer } from "react-icons/fa6";
+import ServiceHomeCard from "../../components/ServiceHomeCard";
 
 const Landing = () => {
+  const webDevStacks = [
+    "React.js",
+    "Node.js",
+    "Laravel",
+    "MongoDB",
+    "Tailwind CSS",
+  ];
   return (
     <section className="bg-white py-20">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
