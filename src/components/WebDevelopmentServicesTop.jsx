@@ -15,9 +15,9 @@ const WebDevelopmentServicesTop = () => {
           <p className='text-sm md:text-base'>
             We are providing Custom Website and Web App Development Services for Years, With a 100% Satisfaction Rate.
           </p>
-          {/* <button className="flex gap-2 w-full md:w-80 font-semibold text-md capitalize border border-black-500 bg-white text-black hover:bg-primary hover:text-white transition-colors duration-300 items-center justify-center space-x-2 py-2 px-5">
+          <button className="flex gap-2 w-full md:w-80 font-semibold text-md capitalize border border-black-500 bg-white text-black hover:bg-primary hover:text-white transition-colors duration-300 items-center justify-center space-x-2 py-2 px-5">
             Request Development Services <FaArrowRightLong className='mt-1' />
-          </button> */}
+          </button>
           <div className='flex flex-wrap gap-8'>
             <div className='flex flex-col items-center gap-4 border-r-2 pr-4'>
               <img src={fiver} alt="Fiverr" className='h-8 md:h-10 w-auto' />

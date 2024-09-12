@@ -70,13 +70,13 @@ const BlogsSlider = () => {
                 </Slider>
                 <h1
                     onClick={handlePrev}
-                    className="absolute cursor-pointer left-2 sm:left-4 md:left-6 lg:left-8 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full text-lg"
+                    className="absolute cursor-pointer left-0 p-3 bg-black  top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full text-lg"
                 >
-                   <FaAngleLeft />
+                    <FaAngleLeft />
                 </h1>
                 <h1
                     onClick={handleNext}
-                    className="absolute cursor-pointer right-2 sm:right-4 md:right-6 lg:right-8 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full text-lg"
+                    className="absolute cursor-pointer right-0 bg-black p-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full text-lg"
                 >
                     <FaAngleRight />
                 </h1>
