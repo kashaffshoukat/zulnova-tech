@@ -15,8 +15,7 @@ const Header = () => {
     { name: "Portfolio", to: "/portfolio" },
     { name: "Careers", to: "/careers" },
     { name: "Blog", to: "/blog" },
-    { name: "WEBS SERVICES", to: "/WebDevelopmentServices" },
-
+    { name: "WebDevelopmentServices", to: "/WebDevelopmentServices" },
   ];
 
   useEffect(() => {
@@ -34,9 +33,8 @@ const Header = () => {
 
   return (
     <header
-      className={`bg-primary text-white sticky top-0 z-50 transition-shadow duration-300 ${
-        hasShadow ? "shadow-lg" : ""
-      }`}
+      className={`bg-primary text-white sticky top-0 z-50 transition-shadow duration-300 ${hasShadow ? "shadow-lg" : ""
+        }`}
     >
       <div className="container mx-auto flex justify-between items-center py-4">
         <div className="flex items-center space-x-2">
@@ -63,27 +61,24 @@ const Header = () => {
         </div>
 
         <nav
-          className={`md:flex ${
-            isMenuOpen ? "flex" : "hidden"
-          } space-x-6 md:space-x-8`}
+          className={`md:flex ${isMenuOpen ? "flex" : "hidden"
+            } space-x-6 md:space-x-8`}
         >
           {navLinks.map((link, index) => (
             <Link
               key={index}
               to={link.to}
-              className={`relative group text-xl transition duration-300 ${
-                location.pathname === link.to
-                  ? "text-yellow-400"
-                  : "hover:text-yellow-400"
-              }`}
+              className={`relative group text-xl transition duration-300 ${location.pathname === link.to
+                ? "text-yellow-400"
+                : "hover:text-yellow-400"
+                }`}
             >
               {link.name}
               <span
-                className={`absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-400 transform transition-transform duration-300 ${
-                  location.pathname === link.to
-                    ? "scale-x-100"
-                    : "scale-x-0 group-hover:scale-x-100"
-                }`}
+                className={`absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-400 transform transition-transform duration-300 ${location.pathname === link.to
+                  ? "scale-x-100"
+                  : "scale-x-0 group-hover:scale-x-100"
+                  }`}
               ></span>
             </Link>
           ))}

@@ -54,7 +54,7 @@ const data = [
   {
       image: salam,
       name: 'Abdul Salam',
-      position: 'Project Manager',
+      position: 'Project Manager/Flutter Developer',
       backgroundColor: '#05f0bc',
       backgroundImage:salambg
 
@@ -130,14 +130,12 @@ const data = [
       backgroundImage:amirbg
   }
 ];
-
-
     return (
-        <div>
+        <div className='py-12'>
             <h1 className='text-4xl md:text-5xl lg:text-6xl mt-5 font-semibold text-center'>
                 Creatives and &nbsp;<span className='text-[#0A6EB7]'>Professionals</span>
             </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-8 py-12 md:py-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 md:gap-10 py-12 md:py-16">
                 {data.map((item, index) => (
                     <div key={index}>
                         <CustomTeamCard

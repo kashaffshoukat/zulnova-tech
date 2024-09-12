@@ -15,10 +15,10 @@ const MobileAppServices = () => {
  <>
  <WebDevelopmentServicesTop/>
  <WebServicesSlider/>
- <div className='px-20 py-12'>
+ <div className=''>
  <WebServicesCards/>
-  <Benefits/>
-  <Testimonial/>
+  {/* <Benefits/> */}
+  {/* <Testimonial/> */}
   <TechnologyStack/>
   <MainFeatures/>
   <OurProcess/>

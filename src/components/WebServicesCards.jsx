@@ -1,5 +1,5 @@
-import React from 'react'
-import WebServicesCustomCards from './WebServicesCustomCards'
+import React from 'react';
+import WebServicesCustomCards from './WebServicesCustomCards';
 
 const WebServicesCards = () => {
 
@@ -28,25 +28,28 @@ const WebServicesCards = () => {
             program: 'WordPress Development',
             para: 'Hire our exclusive services to build Social Apps. We will develop real-time interactive feeds, and profiles to make social apps feel like a community.'
         },
-    ]
+    ];
+
     return (
         <>
-        <div className='flex flex-col items-center justify-center'>
-            <h1 className='text-3xl font-extralight text-[#2e5090]'>Our Services</h1>
-            <h2 className='text-xl font-semibold'>The Services we Provide</h2>
-        </div>
-        <div className="grid grid-cols-6">
-            {Webdata.map((data, index) => (
-                <div key={index}>
-                    <WebServicesCustomCards
-                        program={data.program}
-                        para={data.para}
-                        />
+            <div className='flex flex-col items-center justify-center mb-8'>
+                <h1 className='text-3xl font-extralight text-[#2e5090]'>Our Services</h1>
+                <h2 className='text-xl text-center font-semibold'>The Services we Provide</h2>
+            </div>
+            <div className='flex items-center justify-center'>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 px-4 md:px-8">
+                    {Webdata.map((data, index) => (
+                        <div key={index}>
+                            <WebServicesCustomCards
+                                program={data.program}
+                                para={data.para}
+                            />
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </div>
-            </>
-    )
+            </div>
+        </>
+    );
 }
 
-export default WebServicesCards
+export default WebServicesCards;

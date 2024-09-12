@@ -15,7 +15,7 @@ const sliderSettings = {
     arrows: true,
     prevArrow: <div className="slick-arrow slick-prev text-2xl">◀</div>,
     nextArrow: <div className="slick-arrow slick-next text-2xl">▶</div>,
-    slidesToShow: 1,
+    slidesToShow:2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -90,7 +90,7 @@ const Testimonial = () => {
             <Slider {...sliderSettings}>
                 {testimonials.map((testimonial, index) => (
                     <div key={index} className="flex justify-center mt-8 mb-8">
-                        <div className="bg-gray-100 p-4 rounded-lg shadow-lg w-full max-w-md mx-4">
+                        <div className="bg-gray-100 p-4 bg-[#f7f7f7] rounded-lg shadow-lg w-full h-64 max-w-md mx-4">
                             <div className="flex items-center justify-between mb-4">
                                 <div className="flex items-center">
                                     <img

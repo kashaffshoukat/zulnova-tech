@@ -2,11 +2,23 @@ import React from 'react'
 
 const BlogDetail3 = () => {
   return (
-    <div className='flex items-center justify-center text-center h-[40vh] my-12 bg-[#2e5090]'>
-    <div>
-      <h1 className='text-3xl text-white'>Your Website, Our Expertise</h1>
-      <p className='text-white mt-3'>Why struggle with development environments? Our skilled developers will bring your website to life, handling everything from design to deployment. Contact us for a free consultation!</p>
-    </div>
+    <div className='flex items-center justify-center text-center h-[40vh] md:h-[50vh] lg:h-[60vh] my-12 bg-[#2e5090] px-4 md:px-8'>
+      <div>
+        <h1 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-white'>
+          Your Website, Our Expertise
+        </h1>
+        <p className='text-sm md:text-base lg:text-lg text-white mt-3'>
+          Why struggle with development environments? Our skilled developers will bring your website to life, handling everything from design to deployment. Contact us for a free consultation!
+        </p>
+        <div className='flex flex-col items-center justify-center mt-3 md:flex-row gap-4 md:gap-6'>
+          <h1 className='p-2 text-sm md:text-base bg-[#2e5090] text-white rounded-md shadow-lg cursor-pointer'>
+            Talk to Expert Now
+          </h1>
+          <h1 className='p-2 text-sm md:text-base border border-[#2e5090] bg-white font-light text-[#2e5090] rounded-md shadow-lg cursor-pointer'>
+            Review Web Development Services
+          </h1>
+        </div>
+      </div>
     </div>
   )
 }

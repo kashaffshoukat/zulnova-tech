@@ -47,6 +47,6 @@ import blogpic2 from './blog.png'
 
 
 export {
-    teampic, teamAll, bgPint, atif, rohan, pmbg, mudasser, anas, amir, moaz, ali, salam, hamza, daniyal, usama, shahbaz, zubair, murtaza, haseeb, fida, react, laravel, react2, hamzabg, python
-    , salambg, amirbg, wajidbg, wajid, irfan, blogpic, avatar, zubairp, mads, fiver, upwork, google, logo1, logo2, logo3, logo4, logo5, logo6, companypic, service, blogpic2
+    teampic,teamAll,bgPint,atif,rohan,pmbg,mudasser,anas,amir,moaz,ali,salam,hamza,daniyal,usama,shahbaz,zubair,murtaza,haseeb,fida,react,laravel,react2,hamzabg,python
+    ,salambg,amirbg,wajidbg,wajid,irfan,blogpic,avatar,zubairp,mads,fiver,upwork,google,logo1,logo2,logo3,logo4,logo5,logo6,companypic,service,blogpic2
 }

@@ -1,9 +1,4 @@
 import React from "react";
-import TopSectionComponent from "../../components/TopSectionComponent";
-import Button from "../../components/Button";
-import { service } from "../../assets";
-import { FaArrowRightLong } from "react-icons/fa6";
-
 
 const ServicesTop = () => {
   return (
@@ -44,11 +39,6 @@ const ServicesTop = () => {
           <div className="absolute bottom-4 md:bottom-7 -left-6 md:-left-7 bg-blue-950 w-12 md:w-14 h-12 md:h-14 rounded-full"></div>
         </div>
       </div>
-      {/* <TopSectionComponent head1={'We Engineer Software Solutions'} head2={'Services and Solutions at'} head3={'Saeedan Technology'} description={'Imagine a tech-powered future for your business with our guidance and expertise. Unleash the potential of innovative solutions tailored just for you.'} buttonComponent={
-        // <Button icon={<FaArrowRightLong />}>
-        //   Explore Our Digital Solutions
-        // </Button>
-      } picture={service} /> */}
     </div>
   );
 };
