@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaChevronDown as ExpandIcon, FaChevronUp as CollapseIcon } from "react-icons/fa";
 
 const accordionData = [
@@ -37,11 +37,22 @@ const accordionData = [
 
 const FAQs = () => {
     const [expandedPanels, setExpandedPanels] = useState(Array(accordionData.length).fill(false));
+    const [contentHeight, setContentHeight] = useState(Array(accordionData.length).fill(0));
+    const contentRefs = useRef([]);
 
     const handlePanelChange = (panelIndex) => {
         const newExpandedPanels = [...expandedPanels];
         newExpandedPanels[panelIndex] = !newExpandedPanels[panelIndex];
         setExpandedPanels(newExpandedPanels);
+
+        // Dynamically set the height based on content
+        const newHeights = [...contentHeight];
+        if (newExpandedPanels[panelIndex]) {
+            newHeights[panelIndex] = contentRefs.current[panelIndex].scrollHeight;
+        } else {
+            newHeights[panelIndex] = 0;
+        }
+        setContentHeight(newHeights);
     };
 
     return (
@@ -63,14 +74,22 @@ const FAQs = () => {
                                 {expandedPanels[index] ? (
                                     <CollapseIcon className="text-white" />
                                 ) : (
-                                    <ExpandIcon className={`text-white`} />
+                                    <ExpandIcon className="text-white" />
                                 )}
                             </button>
-                            {expandedPanels[index] && (
+                            <div
+                                ref={(el) => (contentRefs.current[index] = el)}
+                                style={{
+                                    height: `${contentHeight[index]}px`,
+                                    transition: "height 0.3s ease, opacity 0.3s ease",
+                                    opacity: expandedPanels[index] ? 1 : 0,
+                                }}
+                                className="overflow-hidden"
+                            >
                                 <div className="p-6 bg-gray-100 text-white">
                                     <p>{accordion.content}</p>
                                 </div>
-                            )}
+                            </div>
                         </div>
                     ))}
                 </div>

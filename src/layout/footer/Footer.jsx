@@ -4,8 +4,8 @@ import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
-    <footer className="bg-primary  text-white">
-      <div className="flex items-center justify-between p-6">
+    <footer className="bg-primary  text-white px-16">
+      <div className="flex items-center justify-between py-6">
         <img src="/assets/Logo.webp" alt="Logo" className="w-14 " />
         <div className="flex items-center">
           <FaLinkedin size={25} className="cursor-pointer mx-4" />
@@ -13,10 +13,10 @@ const Footer = () => {
           <FaInstagram size={25} className="cursor-pointer mx-4" />
         </div>
       </div>
-      <div className="px-6">
+      <div className="py-0">
         <hr class="text-white w-full" />
       </div>
-      <div className="container mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto py-5 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <p className="mt-4">
             Saeedan Technology is a leading software development company located

@@ -15,7 +15,7 @@ const Header = () => {
     { name: "Portfolio", to: "/portfolio" },
     { name: "Careers", to: "/careers" },
     { name: "Blog", to: "/blog" },
-    { name: "WebDevelopmentServices", to: "/WebDevelopmentServices" },
+    // { name: "WebDevelopmentServices", to: "/WebDevelopmentServices" },
   ];
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const Header = () => {
       className={`bg-primary text-white sticky top-0 z-50 transition-shadow duration-300 ${hasShadow ? "shadow-lg" : ""
         }`}
     >
-      <div className="container mx-auto flex justify-between items-center py-4">
+      <div className="mx-auto flex justify-between items-center py-4 px-16">
         <div className="flex items-center space-x-2">
           <Link to="/">
             <img
