@@ -50,12 +50,13 @@ const Header = () => {
           </button>
         </div>
 
-        <nav className={`flex flex-col gap-5 md:flex-row md:space-x-8 ${isMenuOpen ? "block w-full  items-center" : "hidden md:flex"}`}>
+        <nav className={`flex flex-col gap-5 md:flex-row md:space-x-8 py-12 ${isMenuOpen ? "block w-full  items-center" : "hidden md:flex"}`}>
           {navLinks.map((link, index) => (
+
             <Link
               key={index}
               to={link.to}
-              className={`relative group text-xl text-center transition duration-300 ${location.pathname === link.to ? "text-yellow-400" : ""}`}
+              className={` relative group text-xl text-center transition duration-300 ${location.pathname === link.to ? "text-yellow-400" : ""}`}
             >
               {link.name}
               <span

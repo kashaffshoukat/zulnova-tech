@@ -94,10 +94,10 @@ const Testimonial = () => {
                     ></iframe>
                 </div>
             </div>
-            <Slider {...sliderSettings}>
+            <Slider {...sliderSettings} className='overflow-hidden'>
                 {testimonials.map((testimonial, index) => (
-                    <div key={index} className="flex justify-center mt-8 mb-8">
-                        <div className="bg-gray-100 p-4 bg-[#f7f7f7] rounded-lg shadow-lg w-full h-64 max-w-md mx-4">
+                    <div key={index} className="flex justify-center items-center p-4 sm:p-6 lg:p-10 h-full">
+                        <div className="bg-gray-100 p-4 bg-[#f7f7f7] rounded-lg shadow-lg w-full h-full max-w-xs sm:max-w-md lg:max-w-lg overflow-hidden">
                             <div className="flex items-center justify-between mb-4">
                                 <div className="flex items-center">
                                     <img

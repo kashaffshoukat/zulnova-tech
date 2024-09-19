@@ -59,11 +59,11 @@ const Landing = () => {
           </div>
           <Benefits />
           <Service />
-          <PortolioSlider/>
+          <PortolioSlider />
           <Testimonial />
           <TechnologyStack />
           <FAQs />
-          <GetInTouch/>
+          <GetInTouch />
         </section>
       </div>
     </>
