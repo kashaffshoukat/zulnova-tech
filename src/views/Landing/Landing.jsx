@@ -10,7 +10,7 @@ import GetInTouch from "../../components/GetInTouch/GetInTouch";
 import PortolioSlider from "./PortolioSlider";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { amir, amirbg, landingbg } from "../../assets";
+import { amir, amirbg, landingbg, landingbg2, Landingbg3 } from "../../assets";
 
 const Landing = () => {
   const getInTouchRef = useRef(null);
@@ -68,9 +68,9 @@ const Landing = () => {
 <div className="relative flex flex-col gap-7 h-[70vh] items-center justify-center">
       <div
         className="absolute inset-0 bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: `url(${landingbg})` }}
+        style={{ backgroundImage: `url(${Landingbg3})` }}
       >
-        <div className="absolute inset-0 bg-blue-950 opacity-40" />
+        <div className="absolute inset-0 bg-blue-950 opacity-70" />
       </div>
       <h1 className="text-7xl text-center text-white relative z-10">
         Be the {" "}
@@ -108,12 +108,13 @@ const Landing = () => {
 
 
 
-          {/* </div> */}
+         <div className="px-20 py-12">
           <Benefits />
           <Service getInTouchRef={getInTouchRef} />
           <PortolioSlider />
           <Testimonial />
           <TechnologyStack />
+         </div>
           <FAQs />
           <div ref={getInTouchRef}>
             <GetInTouch />
