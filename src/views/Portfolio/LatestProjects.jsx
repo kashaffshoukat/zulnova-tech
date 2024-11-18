@@ -142,7 +142,7 @@ const LatestProjects = React.memo(({ onFetch }) => {
       rel="noopener noreferrer"
       style={{ textDecoration: "none", color: "white" }}
     >
-      Look it up
+    Case Study
     </a>
   )}
 
