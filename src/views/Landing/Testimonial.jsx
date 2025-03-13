@@ -114,7 +114,7 @@ const Testimonial = () => {
             key={index}
             className="flex justify-center items-center p-4 sm:p-6 lg:p-10 "
           >
-            <div className="bg-gray-100 p-4 bg-[#f7f7f7] rounded-lg shadow-lg w-full h-56 max-w-xs sm:max-w-md lg:max-w-lg flex flex-col justify-between">
+            <div className="bg-gray-100 p-4 bg-[#f7f7f7] rounded-lg shadow-lg w-full h-full lg:h-64 max-w-xs sm:max-w-md lg:max-w-lg flex flex-col justify-between">
               <div className="flex items-center justify-between mb-4 ">
                 <div className="flex items-center " >
                   <LazyLoadImage
@@ -130,7 +130,7 @@ const Testimonial = () => {
                 <FaQuoteLeft className="text-primary text-3xl" />
               </div>
               <p className="text-base mb-4">{testimonial.description}</p>
-              <div className="flex items-center">
+              <div className="flex items-center mt-auto">
                 {Array.from({ length: 5 }, (_, i) => (
                   <FaStar
                     key={i}

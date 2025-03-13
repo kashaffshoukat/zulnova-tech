@@ -1,7 +1,7 @@
 
 const BenefitsCard = ({ icon, title, description }) => {
     return (
-        <div className="border border-gray-300 rounded-lg p-4 shadow-md flex items-start space-x-4 h-full">
+        <div className="border border-gray-300 rounded-lg p-4 shadow-md flex items-start space-x-4 h-full w-full">
             <div className="text-3xl text-primary">
                 {icon}
             </div>

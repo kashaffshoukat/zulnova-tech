@@ -17,12 +17,12 @@ const ContactUs = () => {
           Contact Us
         </h2>
         <div className="flex flex-wrap justify-center gap-12">
-          <div className="text-center w-72">
+          <div className="text-center w-96">
             <div className="flex justify-center mb-4">
               <FaMapMarkerAlt className="text-5xl md:text-7xl border border-white p-2 rounded-full" />
             </div>
             <p className="w-full">
-              Office # 120-D, 5th Floor, DHA Phase 8 Commercial Broadway, Lahore
+            Commercial Plaza, B BLOCK Block B Pcsir Employees Phase 2 PCSIR Phase 2, Lahore, 54940
             </p>
           </div>
 
