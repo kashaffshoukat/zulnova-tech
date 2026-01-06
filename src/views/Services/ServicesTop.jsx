@@ -1,5 +1,4 @@
 import TopSectionComponent from "../../components/TopSectionComponent";
-import { service1 } from "../../assets";
 
 const ServicesTop = () => {
   return (

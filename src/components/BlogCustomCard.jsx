@@ -1,5 +1,4 @@
 import React from 'react'
-import { blogpic, zubairp } from '../assets';
 import { useNavigate } from 'react-router-dom';
 
 const BlogCustomCard = ({ heading1, heading2, name, position, image }) => {

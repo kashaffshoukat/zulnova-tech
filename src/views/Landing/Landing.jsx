@@ -9,7 +9,6 @@ import FAQs from "./FAQS";
 import GetInTouch from "../../components/GetInTouch/GetInTouch";
 import PortolioSlider from "./PortolioSlider";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { landingbg, landingbg2, Landingbg3 } from "../../assets";
 
 const Landing = () => {
   const getInTouchRef = useRef(null);

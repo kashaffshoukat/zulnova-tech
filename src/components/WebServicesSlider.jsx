@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-import { logo1, logo2, logo3, logo4, logo5, logo6 } from '../assets';
 
 const WebServicesSlider = () => {
     const sliderRef = useRef(null);

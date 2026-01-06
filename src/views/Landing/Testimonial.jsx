@@ -44,37 +44,7 @@ const sliderSettings = {
   ],
 };
 
-const Testimonial = () => {
-  const testimonials = [
-    {
-      author: "Lucypiix",
-      icon: "src/assets/testiminials_avatar.webp",
-      description:
-        '"I have to say I am very pleased, project done in a timely manner with detail, I asked for, but above all, they are on top of communicating with the client and for me that is super important. Great job. Highly recommended."',
-      rating: 5,
-    },
-    {
-      author: "Danobi",
-      icon: "src/assets/testiminials_avatar.webp",
-      description:
-        '"I am very satisfied with my work. Communication is great. Was patient with me. Highly recommended."',
-      rating: 5,
-    },
-    {
-      author: "Patrick Stewart",
-      icon: "src/assets/testiminials_avatar.webp",
-      description:
-        '"This company was excellent. I will use them again and again. Zulnova technology team communicates well and is very detailed. Thank you for the amazing work."',
-      rating: 5,
-    },
-    {
-      author: "Infrontus",
-      icon: "src/assets/testiminials_avatar.webp",
-      description:
-        '"Zulnova Technology Team are simply superb. Working and communicating with them was a pure pleasure. They understood my issue and helped me resolve it very fast. I would definitely recommend them to everyone."',
-      rating: 5,
-    },
-  ];
+
 
   return (
     <div className="relative bg-lightblue py-12">
@@ -145,6 +115,5 @@ const Testimonial = () => {
       </Slider>
     </div>
   );
-};
 
 export default Testimonial;

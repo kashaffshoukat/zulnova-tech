@@ -1,5 +1,4 @@
 import React from 'react';
-import { companypic } from '../assets';
 import OurProcessData from './OurProcessData';
 
 const OurProcess = () => {

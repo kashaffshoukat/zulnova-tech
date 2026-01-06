@@ -1,5 +1,4 @@
 import React from 'react';
-import { fiver, google, mads, upwork } from '../assets';
 import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
 
 const WebDevelopmentServicesTop = () => {

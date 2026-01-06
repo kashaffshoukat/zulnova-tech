@@ -6,7 +6,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import CustomTeamCard from '../components/CustomTeamCard'
 import { FaAngleRight } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
-import { ali, amir, amirbg, anas, daniyal, fida, hamza, hamzabg, haseeb, irfan, laravel, moaz, mudasser, murtaza, pmbg, python, react, react2, salam, salambg, shahbaz, wajid, wajidbg, zubair } from '../assets';
 
 
 

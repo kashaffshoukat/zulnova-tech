@@ -1,4 +1,3 @@
-import { welcomeImg } from '../assets';
 
 const Welcome = () => {
   return (
