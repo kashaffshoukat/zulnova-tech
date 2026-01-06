@@ -5,7 +5,6 @@ import Careers from "./views/Careers/Careers";
 import JobApplication from "./views/Careers/JobApplication";
 import ContactUs from "./views/ContactUs/ContactUs";
 import Services from "./views/Services/Services";
-import Team from "./views/Team/Team/Team";
 import Blogs from "../src/views/Blogs/Blogs";
 import Company from "../src/views/Company/index";
 import Portfolio from "../src/views/Portfolio/index";
@@ -22,7 +21,6 @@ export default function Router() {
       element: <RootLayout />,
       children: [
         { path: "/", element: <Landing /> },
-        { path: "/team", element: <Team /> },
         { path: "/blog", element: <Blogs /> },
         { path: "/company", element: <Company /> },
         { path: "/blog/:slug", element: <BlogsDetailsComponent /> },
